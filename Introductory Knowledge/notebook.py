@@ -34,23 +34,24 @@ type(1)
 # In[4]:
 
 
-4**4 #exponents use two asterisks
+4**4 
+# Use two asterisks to add an exponent
 
 
 # In[8]:
 
 
-5%2 #the % gives the remainder of a divistion, 
-#given the division by integers
+5%2 
+# The % sign gives the remainder of a divistion, given the division by integers
 
 
 # ## How to Write + Lists and Sets
 
-# In[50]:
+# In[1]:
 
 
-"i don't like that"
-#brackets stays in the output
+"I don't like that"
+# Brackets stay in the output
 
 
 # In[12]:
@@ -63,35 +64,35 @@ print("Marmalade")
 
 
 print("My name is {}".format("Stefano"))
-#the curly brackets are to be filled, with .format("")
+# Curly brackets are to be filled, with .format("")
 
 
 # In[16]:
 
 
 print("First: {x} Second: {y}".format(x="XXX", y="YYY"))
-#you can change the value in the brackets
+# You can change the value in the brackets
 
 
 # In[17]:
 
 
 ["1","a","2","b","3","4"]
-#list = arrays
+# List are used to store multiple items in a single variable
 
 
-# In[40]:
+# In[2]:
 
 
-mylist = ["AAAAAAAA","AAAAAAAAAAAAAAAA","B"]
-#indexed list
+mylist = ["AA","A","B"]
+# Indexing in Python is a way to refer the individual items within an iterable by its position
 
 
-# In[31]:
+# In[3]:
 
 
 mylist[1]="A"
-#the first number is counted as 0, the second as 1, etc...
+# Example: the first element of a List is indexed as 0, the second as 1, etc
 
 
 # In[23]:
@@ -100,52 +101,53 @@ mylist[1]="A"
 mylist
 
 
-# In[26]:
+# In[5]:
 
 
-mylist.append("D") 
-#add an element at the end of the list
+mylist.append("C") 
+# Add an element at the end of the list
 
 
-# In[25]:
+# In[8]:
 
 
 mylist
+# Shows the content of the list
 
 
 # In[38]:
 
 
 mylist2 = [1, 2, ["A", "B"]]
-#nested list
+# Nested list: a list inside a list (can be done many times)
 
 
 # In[33]:
 
 
 mylist2[2][1]
-#pick the second element in the third element of the nested
+# Pick the second element in the third element of the nested
 
 
 # In[44]:
 
 
 t = (1,2,3)
-#tuple = a list that can't be changed (unmutable list)
+# Tuple: a list that can't be changed (unmutable list)
 
 
 # In[45]:
 
 
 d = {"key1":"value1", "key2":"value2"}
-#dictionaries = hash tables; not a list, so no order
+# Dictionaries consist of a collection of key-value pairs, where each key-value pair maps the key to its associated value
 
 
 # In[47]:
 
 
 {1,2,3}
-#set = unordered collection of unique elements
+# Set = unordered collection of unique elements
 
 
 # ## True or False? 
@@ -154,28 +156,29 @@ d = {"key1":"value1", "key2":"value2"}
 
 
 1 > 4 
-#Python checks if T-F and answers
-#usable with any: >, <, =, and their combinations
+# Python checks if T-F and answers
+# Usable with mathematical symbols like >, <, =, and their combinations
 
 
 # In[59]:
 
 
 1 == 1
-#look for equality
+# look for equality
 
 
 # In[60]:
 
 
 'A' == 'a'
+# Valid also for words
 
 
 # In[62]:
 
 
 1 != 2
-#inequality
+# Inequality
 
 
 # ## Logical Operators
@@ -184,14 +187,14 @@ d = {"key1":"value1", "key2":"value2"}
 
 
 1 < 2 and 3 > 1
-#use parenthesis to facilitate reading
+# Better to use parenthesis to facilitate the reading
 
 
 # In[69]:
 
 
 (2 > 4) or (4 == 4)
-#at least one is ok
+# The logical operator "or" gives "true" if at least one condition is true
 
 
 # In[76]:
@@ -201,7 +204,7 @@ if 1 == 2:
     print("worked")
 else:
     print("not ok")
-#if - else conditions
+# Other logical operators: if - else conditions
 
 
 # In[77]:
@@ -213,39 +216,39 @@ elif 3 == 3:
     print("eheh")
 else:
     print("not ok")
-#if - else conditions plus a second condition to be checked
+# if - else conditions 
 
 
-# In[79]:
+# In[13]:
 
 
 seq = [1,2,3,4,5]
-#random list to show the next step
+# Random list for the next command
 
 
-# In[81]:
+# In[21]:
 
 
-for WHATEVER in seq:
-    print(WHATEVER)
-#you can actually put whatever word you prefer instead of WHATEVER
+for x in seq:
+    print("ciao %d" % (x))
+# Loop: for - in; moreover, you can put whatever word you prefer instead of x
 
 
-# In[84]:
+# In[12]:
 
 
 i = 2
 while i < 7:
     print("i is {}".format(i))
     i = i+1
-#loops with "while"
+# Loop: while  
 
 
 # In[85]:
 
 
 list(range(2,5))
-#how to create a list from one element to another
+# How to create a list starting from one element to another (not included)
 
 
 # In[87]:
@@ -253,7 +256,7 @@ list(range(2,5))
 
 for x in range(5):
     print("hi")
-#range is used to make stuff with "for x" 
+# Loop: range can be used to set conditions inside the: for - in loops 
 
 
 # In[90]:
@@ -270,60 +273,58 @@ for num in x:
     out.append(num**3)
     
 print(out)
-#1 create an empty list to be filled (here is OUT)
-#2 create a loop from a starting list
-#3 attach new elements to OUT (here .append)
-#4 far from the loop ask to see the list's content (print)
+
+# 1 Create an empty list to be filled (here is OUT)
+# 2 Create a loop from a starting list
+# 3 Attach new elements to OUT (here is .append)
+# 4 Far from the loop ask to see the list's content (print)
 
 
 # In[96]:
 
 
 [num**4 for num in x]
-#a shortcut way to do what we did above
-#you only need x, and less typing
+# Shortcut to do what we did above
+# You only need x, and less typing
 
 
 # ## Functions and Special Methods with Objects
 
-# In[110]:
+# In[25]:
 
 
 def my_func(name = "NO NAME"):
     print("Hello World! And Hello " + name)
-#here we simply define the function under a new name
-#the "+banana" is another separated part of the function
+# Here we define a new function (my_func) that requires an argument ("NO NAME" is not an argument)
 
 
-# In[111]:
+# In[26]:
 
 
 my_func("Stefano")
-#if you forget the () then it will be shown where the 
-#function is stored, but the function won't be operated
+# If you forget the () then it will be shown where the function is stored, but the function won't be operated
 
 
-# In[115]:
+# In[27]:
 
 
 def square(x):
     return x**2
-#here are defining a new function again
-#if we used "print", the "result" would not store anything
+# Here we are defining a new function (again); "print" here is inappropriated: we want to define a function
 
 
-# In[116]:
+# In[28]:
 
 
 result = square(3)
-#the "result" stores the result of the current operation
+# The "result" stores the result of the current operation
 
 
-# In[114]:
+# In[29]:
 
 
 result
-#try "type(result)" to see
+# Try "type(result)" to see
 
 
 # In[120]:
@@ -331,8 +332,7 @@ result
 
 def times_two(var):
     return var*2
-#instad of defining a new function whenever wanted, use 
-#Lambda, which is a one-shot function (see after)
+# Instead of defining a new function whenever wanted, call it Lambda: it is a one-shot function (see after)
 
 
 # In[121]:
@@ -341,74 +341,74 @@ def times_two(var):
 times_two(10)
 
 
-# In[126]:
+# In[31]:
 
 
 st = "hello my name is Stefano"
-#string
+# String
 
 
-# In[131]:
+# In[32]:
 
 
 st.lower()
-#rewrite in lowercase
+# Rewrite in lowercase
 
 
 # In[132]:
 
 
 st.upper()
-#rewrite in uppercase
+# Rewrite in uppercase
 
 
 # In[133]:
 
 
 st.split()
-#separate any element of the string in a list
+# Separate any element of the string in a list
 
 
 # In[136]:
 
 
 tweet = "hello moto #motorola #bestphone"
-#suppose you deal with Twitter
+# Suppose you deal with a post from Twitter or other platforms
 
 
 # In[138]:
 
 
 tweet.split()
-#separate any element of the string in a list
+# Separate any element of the string in a list based on the space (the empty brackets)
 
 
 # In[140]:
 
 
 tweet.split("#")
+# Separate the strings' elements by #
 
 
 # In[141]:
 
 
 d = {"k1":"v1","k2":"v2"}
-#create a dictionary
+# Create a dictionary
 
 
 # In[142]:
 
 
 d.keys()
-#group the keys
+# Group the keys
 
 
 # In[143]:
 
 
 d.items()
-#group everything by relation (between a key and its element)
-#no order between groups
+# Group everything by relation (between a key and its element); no order between groups
 
 
 # In[144]:
@@ -421,36 +421,35 @@ mylist = [1,2,3]
 
 
 first = mylist.pop(0)
-#you create a variable "first" which is compound of the first
-#element of "mylist". "mylist" loses that element
+# Create a variable "first" which is compound of the first element of "mylist"; "mylist" loses that element
 
 
 # In[152]:
 
 
 3 in mylist
-#how to check if an element is in a list
+# How to check if an element is in a list
 
 
 # In[162]:
 
 
 seq = ['soup','dog','salad','cat','great']
-#defined a sequence
+# Defined a sequence
 
 
 # In[163]:
 
 
 list(filter(lambda word: word[0]=="s", seq))
-#use the lambda (definable function) to search for a word that 
-#begins with s in sequence
+# Use the lambda (definable function) to search for a word that begins with s in sequence
 
 
-# In[ ]:
+# In[7]:
 
 
-
+del mylist[4]
+# Delete the selcted element from an list
 
 
 # In[ ]:
